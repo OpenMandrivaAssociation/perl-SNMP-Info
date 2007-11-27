@@ -2,12 +2,12 @@
 
 Summary:        Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
 Name:           perl-%{module}
-Version:        1.04
-Release:        %mkrel 2
+Version:        1.07
+Release:        %mkrel 0.beta.1
 License:        BSD-like
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/SNMP/%{module}-%{version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/SNMP/%{module}-%{version}.tar.gz
 BuildRequires:  perl-devel
 BuildRequires:  perl-NetSNMP >= 5.1.2
 BuildArch:      noarch
@@ -66,5 +66,3 @@ rm -rf %{buildroot}
 %doc COPYRIGHT ChangeLog DeviceMatrix.txt README
 %{perl_vendorlib}/SNMP
 %{_mandir}/*/*
-
-
