@@ -11,7 +11,6 @@ Source:         http://www.cpan.org/modules/by-module/SNMP/%{module}-%{version}.
 BuildRequires:  perl-devel
 BuildRequires:  perl-NetSNMP >= 5.1.2
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 SNMP::Info gives an object oriented interface to information obtained
