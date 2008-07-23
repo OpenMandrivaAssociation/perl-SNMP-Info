@@ -2,7 +2,7 @@
 
 Summary:        Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
 Name:           perl-%{module}
-Version:        1.07
+Version:        1.09
 Release:        %mkrel 0.beta.1
 License:        BSD-like
 Group:          Development/Perl
