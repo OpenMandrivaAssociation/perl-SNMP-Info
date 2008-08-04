@@ -2,8 +2,8 @@
 
 Summary:        Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
 Name:           perl-%{module}
-Version:        1.09
-Release:        %mkrel 0.beta.1
+Version:        2.00
+Release:        %mkrel 1
 License:        BSD-like
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
@@ -11,7 +11,7 @@ Source:         http://www.cpan.org/modules/by-module/SNMP/%{module}-%{version}.
 BuildRequires:  perl-devel
 BuildRequires:  perl-NetSNMP >= 5.1.2
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 SNMP::Info gives an object oriented interface to information obtained
