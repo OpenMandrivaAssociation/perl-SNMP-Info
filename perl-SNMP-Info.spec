@@ -1,17 +1,19 @@
-%define module  SNMP-Info
+%define upstream_name    SNMP-Info
+%define upstream_version 2.01
 
-Summary:        Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
-Name:           perl-%{module}
-Version:        2.01
-Release:        %mkrel 1
-License:        BSD-like
-Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/SNMP/%{module}-%{version}.tar.gz
-BuildRequires:  perl-devel
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
+License:    BSD-like
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/SNMP/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl-NetSNMP >= 5.1.2
 BuildArch:      noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 SNMP::Info gives an object oriented interface to information obtained
@@ -44,8 +46,7 @@ a couple hashes. See EXTENDING SNMP::INFO.
                                     
 
 %prep
-
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
