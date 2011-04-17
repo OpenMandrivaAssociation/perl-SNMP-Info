@@ -1,9 +1,9 @@
 %define upstream_name    SNMP-Info
-%define upstream_version 2.01
+%define upstream_version 2.04
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
 License:    BSD-like
