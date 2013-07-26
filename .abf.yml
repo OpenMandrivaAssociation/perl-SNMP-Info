@@ -1,4 +1,5 @@
 removed_sources:
   SNMP-Info-2.05.tar.gz: 6baebe3a0f69ead6b6b61dcbe03ada8149f4760a
-sources:
   SNMP-Info-2.11.tar.gz: 1d5290fe278c4f2c618f473567eefd6b31e50e7c
+sources:
+  SNMP-Info-3.03.tar.gz: 13e49787ff9162d64e219b521b40f4d25da6cf83
