@@ -1,5 +1,5 @@
 %define upstream_name    SNMP-Info
-%define upstream_version 3.11
+%define upstream_version 3.12
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
@@ -136,6 +136,7 @@ make test
 
 * Fri Aug 27 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 0.8-1mdk
 - initial mandrake package
+
 
 
 
