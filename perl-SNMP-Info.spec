@@ -1,5 +1,5 @@
 %define upstream_name    SNMP-Info
-%define upstream_version 3.13
+%define upstream_version 3.17
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
@@ -62,6 +62,3 @@ make test
 %doc COPYRIGHT ChangeLog DeviceMatrix.txt README
 %{perl_vendorlib}/SNMP
 %{_mandir}/*/*
-
-
-
