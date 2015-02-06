@@ -2,7 +2,7 @@
 %define upstream_version 3.17
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Object Oriented Perl5 Interface to Network devices and MIBs through SNMP
 
